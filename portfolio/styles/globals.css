@@ -14,3 +14,31 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --clr-background: hsl(0, 0%, 100%);
+  --on-background: hsl(0, 0%, 0%);
+  --clr-primary: hsl(200, 82%, 47%);
+  --on-primary: hsl(0, 0%, 100%);
+
+  --clr-shadow: hsl(0, 0%, 0%, 0.12);
+
+  --clr-secondary: hsl(209, 100%, 50%);
+  --on-secondary: hsl(0, 0%, 100%);
+  --clr-success: hsl(120, 100%, 50%);
+  --on-success: hsl(0, 0%, 100%);
+  --clr-warning: hsl(47, 100%, 50%);
+  --on-warning: hsl(0, 0%, 100%);
+  --clr-error: hsl(0, 100%, 50%);
+  --on-error: hsl(0, 0%, 100%);
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    --clr-background: hsl(0, 0%, 0%);
+    --on-background: hsl(0, 0%, 100%);
+    --clr-primary: hsl(200, 100%, 50%);
+
+    --clr-shadow: hsl(0, 0%, 100%, 0.12);
+  }
+}
