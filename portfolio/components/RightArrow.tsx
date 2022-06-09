@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function RightArrow({}: Props) {
+export default function RightArrow() {
    const size = 32;
    return (
       <svg
