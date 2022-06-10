@@ -1,0 +1,34 @@
+{
+   "education": [
+      {
+         "school": "Oregon State University",
+         "degree": "Bachelor of Science",
+         "concentration": "Computer Science",
+         "specialization": "Cybersecurity",
+         "minor": "Mathematics",
+         "dates": "September 2021 - Present",
+         "gpa": "3.84",
+         "classes": [
+            {
+               "name": "ENGR",
+               "number": "103",
+               "title": "Engineering Computation and Algorithmic Thinking",
+               "grade": "A"
+            },{
+               "name": "ENGR",
+               "number": "102",
+               "title": "Engineering Mathematics",
+               "grade": "A"
+            }
+         ]
+      }
+   ],
+   "skills": ["HTML", "CSS", "JavaScript", "jQuery"],
+   "awards": [
+      {
+         "name": "Honor Roll",
+         "date": "Most Recently: Winter 2020",
+         "description": "Completed a course load of 12 graded credits or more with a GPA of 3.5 or better"
+      }
+   ]
+}

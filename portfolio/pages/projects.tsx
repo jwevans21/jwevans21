@@ -60,24 +60,6 @@ const Projects: NextPage<Props> = ({ projects }) => {
                      </a>
                   </Link>
                ))}
-               {/* <a href='/projects/1' className={card.card}>
-                  <h2 className={card.title}>
-                     <span>Project 1</span>
-                     <RightArrow />
-                  </h2>
-                  <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-               </a>
-               <a href='/projects/2' className={card.card}>
-                  <h2 className={card.title}>
-                     <span>Project 2</span>
-                     <RightArrow />
-                  </h2>
-                  <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-               </a> */}
             </div>
          </main>
       </div>

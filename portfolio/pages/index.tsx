@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import React from 'react';
 import RightArrow from '../components/RightArrow';
 import grid from '../styles/Grid.module.scss';
@@ -34,6 +33,15 @@ const Home: NextPage = () => {
                         <RightArrow />
                      </h2>
                      <p>View my projects</p>
+                  </a>
+               </Link>
+               <Link href='/resume'>
+                  <a className={card.card}>
+                     <h2 className={card.title}>
+                        <span>Resume</span>
+                        <RightArrow />
+                     </h2>
+                     <p>View my resume</p>
                   </a>
                </Link>
             </div>

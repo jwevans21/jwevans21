@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import layout from '../styles/Layout.module.scss';
 import link from '../styles/Link.module.scss';
+
 const NotFound: NextPage = () => {
    return (
       <div className={layout.container}>
