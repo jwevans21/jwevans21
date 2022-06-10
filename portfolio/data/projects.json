@@ -1,0 +1,16 @@
+[
+   {
+      "name": "Project 1",
+      "description": "This is a project",
+      "github": "https://github.com",
+      "website": "https://website.com",
+      "techStack": ["React", "Next.js", "TypeScript"]
+   },
+   {
+      "name": "Project 2",
+      "description": "This is a project",
+      "github": "https://github.com",
+      "website": "https://website.com",
+      "techStack": ["React", "Next.js", "TypeScript"]
+   }
+]

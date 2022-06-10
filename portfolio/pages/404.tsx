@@ -14,7 +14,10 @@ const NotFound: NextPage = () => {
          <main className={layout.main}>
             <h1 className={layout.title}>404</h1>
             <p className={layout.subtitle}>
-               Page not found. <Link href='/'><a className={link.link}>Go back to the homepage.</a></Link>
+               Page not found.{' '}
+               <Link href='/'>
+                  <a className={link.link}>Go back to the homepage.</a>
+               </Link>
             </p>
          </main>
       </div>
