@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 import layout from '../styles/Layout.module.scss';
 import link from '../styles/Link.module.scss';
 const NotFound: NextPage = () => {
@@ -13,7 +14,7 @@ const NotFound: NextPage = () => {
          <main className={layout.main}>
             <h1 className={layout.title}>404</h1>
             <p className={layout.subtitle}>
-               Page not found. <a className={link.link} href='/'>Go back to the homepage.</a>
+               Page not found. <Link href='/'><a className={link.link}>Go back to the homepage.</a></Link>
             </p>
          </main>
       </div>
