@@ -14,7 +14,8 @@
                "number": "103",
                "title": "Engineering Computation and Algorithmic Thinking",
                "grade": "A"
-            },{
+            },
+            {
                "name": "ENGR",
                "number": "102",
                "title": "Engineering Mathematics",
@@ -23,11 +24,84 @@
          ]
       }
    ],
-   "skills": ["HTML", "CSS", "JavaScript", "jQuery"],
+   "skills": [
+      {
+         "name": "HTML",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/html5.svg",
+         "url":""
+      },
+      {
+         "name": "CSS",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/css3.svg",
+         "url": ""
+      },
+      {
+         "name": "SASS",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/sass.svg",
+         "url": ""
+      },
+      {
+         "name": "JavaScript",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/javascript.svg",
+         "url": ""
+      },
+      {
+         "name": "Python",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/python.svg",
+         "url": ""
+      },
+      {
+         "name": "C++",
+         "icon": "https://raw.githubusercontent.com/gilbarbara/logos/master/logos/c-plusplus.svg",
+         "url": ""
+      },
+      {
+         "name": "Linux",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/linux.svg",
+         "url": ""
+      },
+      {
+         "name": "Git",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/git.svg",
+         "url": ""
+      },
+      {
+         "name": "GitHub",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/github.svg",
+         "url": "https://github.com",
+         "invertDark": true
+      },
+      {
+         "name": "Next.js",
+         "icon": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nextdotjs.svg",
+         "url": "https://nextjs.org/",
+         "invertDark": true
+      },
+      {
+         "name": "React",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/react.svg",
+         "url": ""
+      },
+      {
+         "name": "Ubuntu",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/ubuntu.svg",
+         "url": ""
+      },
+      {
+         "name": "Visual Studio Code",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/visualstudiocode.svg",
+         "url": ""
+      },
+      {
+         "name": "TypeScript",
+         "icon": "https://raw.githubusercontent.com/brand-icons/brands/master/icons/color/typescript.svg",
+         "url": ""
+      }
+   ],
    "awards": [
       {
          "name": "Honor Roll",
-         "date": "Most Recently: Winter 2020",
+         "dates": "Most Recently: Winter 2020",
          "description": "Completed a course load of 12 graded credits or more with a GPA of 3.5 or better"
       }
    ]

@@ -1,0 +1,42 @@
+.list {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1.5rem;
+
+   list-style: none;
+   padding: 0;
+
+   @media (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   @media (max-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: start;
+      justify-content: center;
+
+      gap: 0.5rem;
+
+      .icon {
+         &.invertDark {
+            @media (prefers-color-scheme: dark) {
+               filter: invert(100%);
+            }
+         }
+         &.invertLight {
+            @media (prefers-color-scheme: light) {
+               filter: invert(100%);
+            }
+         }
+      }
+
+      .skill {
+         display: block;
+      }
+   }
+}

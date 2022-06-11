@@ -8,6 +8,8 @@
    border-radius: 1rem;
    padding: 1rem;
 
+   min-width: 100%;
+
    .title {
       font-size: 1.5rem;
       font-weight: bold;
@@ -15,11 +17,14 @@
       border-right: 1px solid var(--on-background);
       padding: 1rem;
       padding-right: 2rem;
+
+      min-width: 175px;
    }
 
    .content {
       padding: 1rem;
       padding-left: 2rem;
+      width: 100%;
    }
 }
 
@@ -32,11 +37,30 @@
          border-bottom: 1px solid var(--on-background);
          padding-bottom: 2rem;
          padding-right: 1rem;
+         width: 100%;
       }
 
-      .content{
+      .content {
          padding-left: 1rem;
          padding-top: 2rem;
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .card {
+      max-width: 300px;
+
+      .title {
+         width: 100%;
+         font-size: 1.2rem;
+      }
+
+      .content {
+         width: 100%;
+         padding-left: 1rem;
+         padding-top: 1rem;
       }
    }
 }

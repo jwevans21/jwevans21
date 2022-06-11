@@ -9,8 +9,11 @@ import layout from '../styles/Layout.module.scss';
 import resumeGrid from '../styles/ResumeGrid.module.scss';
 import resumeCard from '../styles/ResumeCard.module.scss';
 import educationCard from '../styles/EducationCard.module.scss';
+import skillsCard from '../styles/SkillsCard.module.scss';
+import awardsCard from '../styles/AwardsCard.module.scss';
 
 import resumeData from '../data/resume.json';
+import Image from 'next/image';
 
 type Props = {
    education: {
@@ -29,10 +32,16 @@ type Props = {
          grade: string;
       }[];
    }[];
-   skills: string[];
+   skills: {
+      name: string;
+      icon: string;
+      url: string;
+      invertDark?: boolean;
+      invertLight?: boolean;
+   }[];
    awards: {
       name: string;
-      date: string;
+      dates: string;
       description: string;
    }[];
 };
@@ -63,7 +72,7 @@ const Resume: NextPage<Props> = ({ education, skills, awards }) => {
                   </h2>
                   <div className={resumeCard.content}>
                      {education.map((school) => (
-                        <div key={school.school}>
+                        <div key={school.school} className={educationCard.item}>
                            <h3 className={educationCard.institution}>
                               <span>{school.school}</span>
                               <span className={educationCard.dates}>
@@ -102,6 +111,57 @@ const Resume: NextPage<Props> = ({ education, skills, awards }) => {
                                  </li>
                               ))}
                            </ul>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+               <div className={resumeCard.card}>
+                  <h2 className={resumeCard.title}>
+                     <span>Skills</span>
+                  </h2>
+                  <div className={resumeCard.content}>
+                     <ul className={skillsCard.list}>
+                        {skills.map((skill, idx) => (
+                           <li key={idx} className={skillsCard.item}>
+                              <Image
+                                 src={skill.icon}
+                                 alt={skill.name}
+                                 width={24}
+                                 height={24}
+                                 className={`${skillsCard.icon} ${
+                                    skill.invertDark
+                                       ? skillsCard.invertDark
+                                       : ''
+                                 } ${
+                                    skill.invertLight
+                                       ? skillsCard.invertLight
+                                       : ''
+                                 }`}
+                              />
+                              <span className={skillsCard.skill}>
+                                 {skill.name}
+                              </span>
+                           </li>
+                        ))}
+                     </ul>
+                  </div>
+               </div>
+               <div className={resumeCard.card}>
+                  <h2 className={resumeCard.title}>
+                     <span>Awards</span>
+                  </h2>
+                  <div className={resumeCard.content}>
+                     {awards.map((award, idx) => (
+                        <div key={idx} className={awardsCard.item}>
+                           <h3 className={awardsCard.name}>
+                              <span>{award.name}</span>
+                              <span className={awardsCard.dates}>
+                                 {award.dates}
+                              </span>
+                           </h3>
+                           <p className={awardsCard.description}>
+                              {award.description}
+                           </p>
                         </div>
                      ))}
                   </div>
